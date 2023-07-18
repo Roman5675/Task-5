@@ -91,7 +91,11 @@ body._lock {
 }
 
 .menu__link {
-    padding: 8px 16px 8px 16px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    
     &:hover {
         background: #82FFE0;
         border-radius: 77px;
@@ -164,7 +168,7 @@ body._lock {
         top: 0;
         left: -100%;
         width: 100%;
-        height: 359px;
+        height: 339px;
         background: #221E29;
         padding: 108px 60px 60px 60px;
         transition: left 0.3s ease 0s;
@@ -184,11 +188,16 @@ body._lock {
     .menu__body._active {
         left: 0;
         .menu__link {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
             &:hover {
                background: none;
                color: #D8EFE3;
             }
         }
+        
     }
     //
 }
